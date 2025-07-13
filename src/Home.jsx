@@ -503,7 +503,6 @@ export default function Home() {
   <ul className="text-white/80 mt-4 list-disc list-inside text-left">
     <li>🎹 <strong>Keyboard</strong> – Untuk mengiringi lagu dan membantu latihan nada dasar.</li>
     <li>🎸 <strong>Gitar Akustik</strong> – Memberi warna suara lebih hidup saat acara informal.</li>
-    <li>🔔 <strong>Perkusi ringan</strong> – Seperti shaker atau cajon, untuk menambah dinamika.</li>
   </ul>
 </motion.div>
 
