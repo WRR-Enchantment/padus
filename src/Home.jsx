@@ -8,6 +8,12 @@ import { useInView } from "react-intersection-observer";
 function shuffle(array) {
   return [...array].sort(() => Math.random() - 0.5);
 }
+function shuffleArray(array) {
+  return array
+    .map((value) => ({ value, sort: Math.random() }))
+    .sort((a, b) => a.sort - b.sort)
+    .map(({ value }) => value);
+}
 
 function QuizGame() {
   const allQuestions = [
@@ -122,6 +128,12 @@ function QuizGame() {
   const [score, setScore] = useState(0);
   const [selectedAnswer, setSelectedAnswer] = useState(null);
   const [showScore, setShowScore] = useState(false);
+  const [shuffledOptions, setShuffledOptions] = useState([]);
+useEffect(() => {
+  if (currentQ) {
+    setShuffledOptions(shuffleArray(currentQ.options));
+  }
+}, [current]);
 
   const currentQ = questions[current];
 
@@ -162,7 +174,7 @@ function QuizGame() {
       <h3 className="text-lg font-bold mb-4 text-yellow-300">🎵 Tebak Lagu Daerah</h3>
       <p className="mb-4 text-sm">{current + 1}. {currentQ.question}</p>
       <div className="space-y-2">
-        {currentQ.options.map((option, idx) => (
+        {shuffledOptions.map((option, idx) => (
           <button
             key={idx}
             onClick={() => handleAnswer(option)}
