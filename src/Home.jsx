@@ -322,17 +322,26 @@ export default function Home() {
 
 <BackgroundLayerShape />
 
-      {/* MARQUEE */}
-      <div className="fixed top-2 left-1/2 transform -translate-x-1/2 z-40 w-[90%] max-w-xl overflow-hidden whitespace-nowrap rounded-md bg-white/100 text-black font-semibold text-sm select-none shadow-md px-4 py-1">
-        <motion.div
-          className="flex gap-12 animate-marquee"
-          animate={{ x: ["0%", "-100%"] }}
-          transition={{ repeat: Infinity, duration: 20, ease: "linear" }}
-        >
-          <span>🎶 Satu suara, satu irama. Gabung Sandya Gantari sekarang juga!</span>
-          <span>✨ Latihan setiap Selasa & Kamis. Siap tampil di acara-acara penting!</span>
-        </motion.div>
-      </div>
+     <div className="fixed top-2 left-1/2 transform -translate-x-1/2 z-40 w-[90%] max-w-xl overflow-hidden whitespace-nowrap rounded-md bg-white/100 text-black font-semibold text-sm select-none shadow-md px-4 py-1">
+  <motion.div
+    className="flex gap-12 w-max"
+    animate={{ x: ["0%", "-50%"] }}
+    transition={{
+      repeat: Infinity,
+      duration: 25, // atur kecepatan di sini
+      ease: "linear",
+    }}
+  >
+    {/* Grup 1 */}
+    <span>🎶 Klik menu untuk pendaftaran Paduan suara SMAN 1 Tajurhalang</span>
+    <span>✨ Latihan setiap Selasa & Kamis. Siap tampil di acara-acara penting!</span>
+
+    {/* Grup 2 (harus sama persis) */}
+    <span>🎶 Klik menu untuk pendaftaran Paduan suara SMAN 1 Tajurhalang</span>
+    <span>✨ Latihan setiap Selasa & Kamis. Siap tampil di acara-acara penting!</span>
+  </motion.div>
+</div>
+
 
       {/* LOGO DAN SOSMED */}
       <motion.div

@@ -270,18 +270,26 @@ export default function RecruitmentPage() {
       </div>
 
       <BackgroundLayerShape />
+<div className="fixed top-2 left-1/2 transform -translate-x-1/2 z-40 w-[90%] max-w-xl overflow-hidden whitespace-nowrap rounded-md bg-white/100 text-black font-semibold text-sm select-none shadow-md px-4 py-1">
+  <motion.div
+    className="flex gap-12 w-max"
+    animate={{ x: ["0%", "-50%"] }}
+    transition={{
+      repeat: Infinity,
+      duration: 25, // atur kecepatan di sini
+      ease: "linear",
+    }}
+  >
+    {/* Grup 1 */}
+    <span>🎶 Selamat datang para peserta didik baru 2025</span>
+    <span>✨ Latihan setiap Selasa & Kamis. Siap tampil di acara-acara penting!</span>
 
-      {/* MARQUEE */}
-      <div className="fixed top-2 left-1/2 transform -translate-x-1/2 z-40 w-[90%] max-w-xl overflow-hidden whitespace-nowrap rounded-md bg-white/100 text-black font-semibold text-sm select-none shadow-md px-4 py-1">
-        <motion.div
-          className="flex gap-12 animate-marquee"
-          animate={{ x: ["0%", "-100%"] }}
-          transition={{ repeat: Infinity, duration: 20, ease: "linear" }}
-        >
-          <span>🎶 Satu suara, satu irama. Gabung Sandya Gantari sekarang juga!</span>
-          <span>✨ Latihan setiap Selasa & Kamis. Siap tampil di acara-acara penting!</span>
-        </motion.div>
-      </div>
+    {/* Grup 2 (harus sama persis) */}
+    <span>🎶 Selamat datang para peserta didik baru 2025</span>
+    <span>✨ Latihan setiap Selasa & Kamis. Siap tampil di acara-acara penting!</span>
+  </motion.div>
+</div>
+
       {/* JUDUL & LOGO */}
       <ScrollReveal>
         <div className="flex flex-col items-center justify-center mt-8 mb-6">
