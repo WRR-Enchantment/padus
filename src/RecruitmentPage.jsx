@@ -293,11 +293,11 @@ export default function RecruitmentPage() {
     }}
   >
     {/* Grup 1 */}
-    <span>🎶 Selamat datang para peserta didik baru 2025</span>
+    <span>🎶 Selamat datang para peserta didik baru 2026</span>
     <span>✨ Latihan setiap Selasa & Kamis. Siap tampil di acara-acara penting!</span>
 
     {/* Grup 2 (harus sama persis) */}
-    <span>🎶 Selamat datang para peserta didik baru 2025</span>
+    <span>🎶 Selamat datang para peserta didik baru 2026</span>
     <span>✨ Latihan setiap Selasa & Kamis. Siap tampil di acara-acara penting!</span>
   </motion.div>
 </div>
@@ -364,7 +364,7 @@ export default function RecruitmentPage() {
       <ScrollReveal>
         <div className="mt-10 mb-6 flex justify-center">
           <a
-            href="https://docs.google.com/forms/d/e/1FAIpQLSc2rSNsoAd2VauTdZNrYg-NVB9Vt6jxIizntmbRfBi1cWFjTg/viewform"
+            href="https://docs.google.com/forms/d/e/1FAIpQLSfkG-YtPaOx5Py_AEskou3i1939cSdC9ngONbywQbB2nmp5ug/viewform"
             target="_blank"
             rel="noopener noreferrer"
             className="px-6 py-2 text-base bg-yellow-400 hover:bg-yellow-300 text-black font-semibold rounded-full shadow-md backdrop-blur-xl transition-all flex items-center gap-2"
@@ -382,10 +382,10 @@ export default function RecruitmentPage() {
     {/* WhatsApp - tanpa link */}
     <div className="flex flex-col items-center gap-2 text-sm text-white font-medium mb-4">
       <div className="flex items-center gap-2 px-4 py-1.5 bg-green-600 rounded-lg shadow-md backdrop-blur-xl">
-        <FaWhatsapp /> 0812-9686-2691 (Fires)
+        <FaWhatsapp /> +62 822-2516-6642 (Aulia)
       </div>
       <div className="flex items-center gap-2 px-4 py-1.5 bg-green-600 rounded-lg shadow-md backdrop-blur-xl">
-        <FaWhatsapp /> 0838-9884-5627 (Rere)
+        <FaWhatsapp /> +62 858-8518-4373 (Rani)
       </div>
     </div>
 
